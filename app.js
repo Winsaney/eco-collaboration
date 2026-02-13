@@ -104,6 +104,14 @@ document.getElementById('menu-toggle').addEventListener('click', () => {
     document.getElementById('sidebar').classList.toggle('open');
 });
 
+// Sidebar collapse
+const sidebarCollapseBtn = document.getElementById('sidebar-collapse-btn');
+if (sidebarCollapseBtn) {
+    sidebarCollapseBtn.addEventListener('click', () => {
+        document.body.classList.toggle('collapsed');
+    });
+}
+
 // ---- Modal ----
 const modalOverlay = document.getElementById('modal-overlay');
 const modalTitle = document.getElementById('modal-title');
