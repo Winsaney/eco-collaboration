@@ -108,7 +108,13 @@ document.getElementById('menu-toggle').addEventListener('click', () => {
 const sidebarCollapseBtn = document.getElementById('sidebar-collapse-btn');
 if (sidebarCollapseBtn) {
     sidebarCollapseBtn.addEventListener('click', () => {
-        document.body.classList.toggle('collapsed');
+        if (window.innerWidth <= 768) {
+            // Mobile: Close the sidebar (hide it)
+            document.getElementById('sidebar').classList.remove('open');
+        } else {
+            // Desktop: Toggle collapsed state (mini sidebar)
+            document.body.classList.toggle('collapsed');
+        }
     });
 }
 
