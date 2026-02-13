@@ -38,29 +38,35 @@
                 </div>
                 <span class="logo-text">生态协作</span>
             </div>
+            <button id="sidebar-collapse-btn" class="sidebar-collapse-btn" title="收起菜单">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                    stroke-linecap="round" stroke-linejoin="round">
+                    <path d="M11 19l-7-7 7-7m8 14l-7-7 7-7" />
+                </svg>
+            </button>
         </div>
 
         <nav class="sidebar-nav">
             <div class="nav-section">
                 <span class="nav-section-title">主要功能</span>
-                <a href="#" class="nav-item active" data-page="dashboard" id="nav-dashboard">
+                <a href="#" class="nav-item active" data-page="dashboard" id="nav-dashboard" data-tooltip="数据洞察">
                     <span class="nav-icon">📊</span>
                     <span class="nav-label">数据洞察</span>
                 </a>
-                <a href="#" class="nav-item" data-page="demands" id="nav-demands">
+                <a href="#" class="nav-item" data-page="demands" id="nav-demands" data-tooltip="需求管理">
                     <span class="nav-icon">📋</span>
                     <span class="nav-label">需求管理</span>
                     <span class="nav-badge" id="demand-badge">0</span>
                 </a>
-                <a href="#" class="nav-item" data-page="analysis" id="nav-analysis">
+                <a href="#" class="nav-item" data-page="analysis" id="nav-analysis" data-tooltip="产品分析">
                     <span class="nav-icon">🔍</span>
                     <span class="nav-label">产品分析</span>
                 </a>
-                <a href="#" class="nav-item" data-page="partners" id="nav-partners">
+                <a href="#" class="nav-item" data-page="partners" id="nav-partners" data-tooltip="伙伴管理">
                     <span class="nav-icon">🤝</span>
                     <span class="nav-label">伙伴管理</span>
                 </a>
-                <a href="#" class="nav-item" data-page="matching" id="nav-matching">
+                <a href="#" class="nav-item" data-page="matching" id="nav-matching" data-tooltip="伙伴匹配">
                     <span class="nav-icon">🎯</span>
                     <span class="nav-label">伙伴匹配</span>
                 </a>
@@ -68,15 +74,15 @@
 
             <div class="nav-section">
                 <span class="nav-section-title">工具</span>
-                <a href="#" class="nav-item" data-page="gantt" id="nav-gantt">
+                <a href="#" class="nav-item" data-page="gantt" id="nav-gantt" data-tooltip="项目排期">
                     <span class="nav-icon">📅</span>
                     <span class="nav-label">项目排期</span>
                 </a>
-                <a href="#" class="nav-item" data-page="flow" id="nav-flow">
+                <a href="#" class="nav-item" data-page="flow" id="nav-flow" data-tooltip="流程跟踪">
                     <span class="nav-icon">📈</span>
                     <span class="nav-label">流程跟踪</span>
                 </a>
-                <a href="#" class="nav-item" data-page="form" id="nav-form">
+                <a href="#" class="nav-item" data-page="form" id="nav-form" data-tooltip="需求表单">
                     <span class="nav-icon">📝</span>
                     <span class="nav-label">需求表单</span>
                 </a>
